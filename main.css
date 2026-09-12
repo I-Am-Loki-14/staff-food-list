@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+:root {
+  --main-color: #0d47a1;
+  --second-color: #2196f3;
+  --bg-color: #e3f2fd;
+  --white-color: #ffffff;
+  --black-color: #222222;
+  --h-font: "Oswald", sans-serif;
+  --p-font: "Roboto Mono", monospace;
+  --border-color: rgb(171, 168, 168);
+}
+.container .link-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+  gap: 0.5rem;
+  justify-content: center;
+  text-align: center;
+}
+.container .link-container a {
+  padding: 1rem 0.5rem;
+  border-radius: 0.2rem;
+  border: 1px solid var(--border-color);
+  font-family: var(--h-font);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.container .link-container a button {
+  border: none;
+  background: transparent;
+}

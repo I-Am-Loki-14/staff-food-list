@@ -9,7 +9,7 @@ async function photo() {
     try {
         console.log("Loading data...");
         
-        errorMessage.innerHTML = '<h1 class="text-center font-monospace"><span class="loader text-3xl"></span></h1>'
+        errorMessage.innerHTML = '<h1 class="text-center font-monospace"><div class="loader"></div></h1>'
         // const url = await fetch(' https://fakestoreapi.com/products');
         const url = await fetch(' https://script.google.com/macros/s/AKfycbwoBK7seCZfkQ_myxY2djbuApyqd3iZWkfFC2uY_bHUJ5fh_cY5WmPRUH-4LDLgdb_wGA/exec')
         const data = await url.json();
@@ -20,8 +20,8 @@ async function photo() {
             row = `
            <tr>
                         <td>${person.no}</td>
-                        <td>${person.list}</td>
                         <td>${person.name}</td>
+                        <td>${person.list}</td>
                         <td>${person.position}</td>
                         <td>${person.remark}</td>
                     </tr>
