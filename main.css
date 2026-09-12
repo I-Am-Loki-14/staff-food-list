@@ -16,12 +16,19 @@
   --p-font: "Roboto Mono", monospace;
   --border-color: rgb(171, 168, 168);
 }
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container .link-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, auto));
   gap: 0.5rem;
   justify-content: center;
   text-align: center;
+  padding: 1rem 0.2rem;
 }
 .container .link-container a {
   padding: 1rem 0.5rem;

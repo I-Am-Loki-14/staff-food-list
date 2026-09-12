@@ -57,7 +57,7 @@ table tbody tr td:nth-child(1) {
   animation: l4 1s steps(4) infinite;
 }
 .loader:before {
-  content: "Loading...";
+  content: "ခနစောင့်ပေးပါ....";
 }
 @keyframes l4 {
   to {
