@@ -31,6 +31,12 @@ section {
   padding: 1rem 0.2rem;
   background-color: var(--bg-color);
 }
+.container .link-container a:first-child {
+  background-color: var(--second-color);
+}
+.first-btn {
+  color: var(--white-color);
+}
 .container .link-container a {
   padding: 1rem 0.5rem;
   border-radius: 0.2rem;
@@ -49,5 +55,5 @@ section {
   background-color: var(--second-color);
 }
 .container .link-container a:hover button {
-  color: white;
+  color: var(--white-color);
 }
