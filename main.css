@@ -29,6 +29,7 @@ section {
   justify-content: center;
   text-align: center;
   padding: 1rem 0.2rem;
+  background-color: var(--bg-color);
 }
 .container .link-container a {
   padding: 1rem 0.5rem;
@@ -37,8 +38,16 @@ section {
   font-family: var(--h-font);
   font-weight: bold;
   font-size: 1.2rem;
+  transition: all 0.3s;
 }
 .container .link-container a button {
   border: none;
   background: transparent;
+  transition: all 0.3s;
+}
+.container .link-container a:hover {
+  background-color: var(--second-color);
+}
+.container .link-container a:hover button {
+  color: white;
 }
