@@ -25,11 +25,14 @@ section {
 .container .link-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, auto));
-  gap: 0.5rem;
+  gap: 0.8rem;
   justify-content: center;
   text-align: center;
   padding: 1rem 0.2rem;
   background-color: var(--bg-color);
+  border-radius: 0.2rem;
+  border: 0;
+  box-shadow: inset 1px 1px 5px var(--border-color);
 }
 .container .link-container a:first-child {
   background-color: var(--second-color);
@@ -40,11 +43,12 @@ section {
 .container .link-container a {
   padding: 1rem 0.5rem;
   border-radius: 0.2rem;
-  border: 1px solid var(--border-color);
+  border: 0px solid var(--border-color);
   font-family: var(--h-font);
   font-weight: bold;
   font-size: 1.2rem;
   transition: all 0.3s;
+  box-shadow: 1px 1px 5px var(--border-color);
 }
 .container .link-container a button {
   border: none;

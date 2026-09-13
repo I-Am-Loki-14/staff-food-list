@@ -11,7 +11,7 @@ async function photo() {
         
         errorMessage.innerHTML = '<h1 class="text-center font-monospace"><div class="loader"></div></h1>'
 
-        const url = await fetch(' https://script.google.com/macros/s/AKfycbwoBK7seCZfkQ_myxY2djbuApyqd3iZWkfFC2uY_bHUJ5fh_cY5WmPRUH-4LDLgdb_wGA/exec')
+        const url = await fetch('https://script.google.com/macros/s/AKfycbz20rouMtqzkezfEONPzMzilCe46VsUj2ulAaPSYeqQlIJRYtmaeYvjCvwJxOjR9hZdLw/exec')
         const data = await url.json();
         tableContent.innerHTML = ''
          errorMessage.innerHTML = '';
