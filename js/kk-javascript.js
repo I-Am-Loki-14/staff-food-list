@@ -11,7 +11,7 @@ async function photo() {
         
         errorMessage.innerHTML = '<h1 class="text-center font-monospace"><div class="loader"></div></h1>'
         // const url = await fetch(' https://fakestoreapi.com/products');
-        const url = await fetch('https://script.google.com/macros/s/AKfycbyVAZ6nqHm_chStkowd8LGUBDaq44poIgfkhMuJS2MFHEkgWTB5GHBSrGDU9DR9RaEr/exec')
+        const url = await fetch('https://script.google.com/macros/s/AKfycbw4f75Jmj13jO05zk10kprgf6duQtrpX97iC_5sJKdUIfoMfMWZ5tN3qeY1ysfC9Hms/exec')
         const data = await url.json();
         tableContent.innerHTML = ''
          errorMessage.innerHTML = '';
@@ -27,6 +27,10 @@ async function photo() {
                     </tr>
             `
            tableContent.innerHTML += row;
+            if (person.photo){
+            const imgTag = ` <img src="${person.photo}" class="img-fluid" alt="...">`
+            imageBox.innerHTML += imgTag;
+        }
         });
        
         console.log("Loading complete...");
