@@ -28,6 +28,7 @@ th {
   font-weight: bold;
   padding: 1rem;
   background-color: var(--second-color);
+  color: var(--white-color);
 }
 table tbody tr,
 td {
