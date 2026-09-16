@@ -27,6 +27,10 @@ async function photo() {
                     </tr>
             `
            tableContent.innerHTML += row;
+              if (person.photo){
+            const imgTag = ` <img src="${person.photo}" class="img-fluid" alt="...">`
+            imageBox.innerHTML += imgTag;
+        }
         });
        
         console.log("Loading complete...");

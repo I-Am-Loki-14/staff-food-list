@@ -27,7 +27,7 @@ th {
   font-family: var(--h-font);
   font-weight: bold;
   padding: 1rem;
-  background-color: rgba(144, 181, 237, 0.874);
+  background-color: var(--second-color);
 }
 table tbody tr,
 td {
